@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préstamo de Libros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Préstamo de Libros - Biblioteca</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Datos del Usuario</legend>
+
+                <label for="nombreUsuario">Nombre</label>
+                <input type="text" id="nombreUsuario" required>
+
+                <label for="codigoLibro">Código del Libro</label>
+                <input type="text" id="codigoLibro" required>
+
+                <label for="fechaPrestamo">Fecha de Préstamo</label>
+                <input type="date" id="fechaPrestamo" required>
+
+                <label for="fechaDevolucion">Fecha de Devolución</label>
+                <input type="date" id="fechaDevolucion" required>
+            </fieldset>
+
+            <button type="submit">Registrar Préstamo</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Sistema Bibliotecario</p>
+    </footer>
+
+</body>
+
+</html>

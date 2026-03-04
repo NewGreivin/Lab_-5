@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Paquetes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Registro de Paquetes</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Información del Envío</legend>
+
+                <label for="remitente">Remitente</label>
+                <input type="text" id="remitente" required>
+
+                <label for="destinatario">Destinatario</label>
+                <input type="text" id="destinatario" required>
+
+                <label for="peso">Peso (kg)</label>
+                <input type="number" step="0.01" id="peso" required>
+
+                <label for="tipoEnvio">Tipo de Envío</label>
+                <select id="tipoEnvio">
+                    <option>Regular</option>
+                    <option>Express</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Registrar Paquete</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Sistema Postal</p>
+    </footer>
+
+</body>
+
+</html>

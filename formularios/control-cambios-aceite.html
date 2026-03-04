@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Cambios de Aceite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Control de Cambios de Aceite - Flotilla Vehicular</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Información del Vehículo</legend>
+
+                <label for="placa">Placa</label>
+                <input type="text" id="placa" required>
+
+                <label for="modelo">Modelo</label>
+                <input type="text" id="modelo" required>
+
+                <label for="kilometraje">Kilometraje Actual</label>
+                <input type="number" id="kilometraje" required min="0" step="1">
+
+                <label for="fecha">Fecha del Cambio</label>
+                <input type="date" id="fecha" required>
+            </fieldset>
+
+            <button type="submit">Registrar Cambio</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Sistema de Gestión Vehicular</p>
+    </footer>
+
+</body>
+
+</html>

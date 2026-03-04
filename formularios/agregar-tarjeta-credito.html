@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Tarjeta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Agregar Tarjeta de Crédito</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Datos de la Tarjeta</legend>
+
+                <label for="titular">Titular</label>
+                <input type="text" id="titular" required>
+
+                <label for="numero">Número de Tarjeta</label>
+                <input type="text" id="numero" required>
+
+                <label for="vencimiento">Vencimiento</label>
+                <input type="month" id="vencimiento" required>
+
+                <label for="codigo">Código de Seguridad</label>
+                <input type="password" id="codigo" required>
+            </fieldset>
+
+            <button type="submit">Guardar Tarjeta</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Tienda Virtual</p>
+    </footer>
+
+</body>
+
+</html>

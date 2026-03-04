@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservación de Transporte UTN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Reservación de Transporte - UTN</h1>
+</header>
+
+<main>
+    <form>
+        <fieldset>
+            <legend>Datos del Solicitante</legend>
+
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" required>
+
+            <label for="cedula">Cédula</label>
+            <input type="text" id="cedula" required>
+
+            <label for="fechaSalida">Fecha de Salida</label>
+            <input type="date" id="fechaSalida" required>
+
+            <label for="destino">Destino</label>
+            <input type="text" id="destino" required>
+
+            <label for="motivo">Motivo</label>
+            <textarea id="motivo"></textarea>
+        </fieldset>
+
+        <button type="submit">Reservar Transporte</button>
+    </form>
+</main>
+
+<footer>
+    <p>Universidad Técnica Nacional</p>
+</footer>
+
+</body>
+</html>
