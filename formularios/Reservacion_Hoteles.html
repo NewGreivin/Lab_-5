@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Reservación de Hotel</title>
+</head>
+<body>
+    <header>
+        <h1>Reservación de Habitaciones de Hotel</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <!-- Sección 1: Datos del Huésped -->
+            <fieldset>
+                <legend>Datos del Huésped</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="\d{4}-\d{4}" placeholder="####-####">
+            </fieldset>
+
+            <fieldset>
+                <legend>Información de la Reserva</legend>
+
+                <label for="fecha_llegada">Fecha de Llegada:</label>
+                <input type="date" id="fecha_llegada" name="fecha_llegada" required>
+
+                <label for="fecha_salida">Fecha de Salida:</label>
+                <input type="date" id="fecha_salida" name="fecha_salida" required>
+
+                <label for="num_huespedes">Número de Huéspedes:</label>
+                <input type="number" id="num_huespedes" name="num_huespedes" min="1" max="10" required>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hotel Resort</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Recepción de Equipos - Taller de Cómputo</title>
+</head>
+<body>
+    <header>
+        <h1>Recepción de Equipos - Taller de Cómputo</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos del Cliente</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="\d{4}-\d{4}" placeholder="####-####" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email">
+            </fieldset>
+
+            <fieldset>
+                <legend>Información del Equipo</legend>
+
+                <label for="tipo_equipo">Tipo de Equipo:</label>
+                <select id="tipo_equipo" name="tipo_equipo" required>
+                    <option value="">Seleccione</option>
+                    <option value="computadora_escritorio">Computadora de Escritorio</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="impresora">Impresora</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required>
+
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Taller de Cómputo</p>
+    </footer>
+</body>
+</html>

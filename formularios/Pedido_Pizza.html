@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Solicitud de Comida - Pizzería</title>
+    </head>
+    <body>
+        <header>
+            <h1>Solicitud de Comida - Pizzería</h1>
+        </header>
+
+        <main>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos del Cliente</legend>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="\d{4}-\d{4}" placeholder="####-####" required>
+
+                    <label for="direccion">Dirección de Entrega:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pedido</legend>
+
+                    <label for="pizza_tipo">Tipo de Pizza:</label>
+                    <select id="pizza_tipo" name="pizza_tipo" required>
+                        <option value="">Seleccione</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="cuatro_quesos">Cuatro Quesos</option>
+                    </select>
+
+                    <label for="tamaño">Tamaño:</label>
+                    <select id="tamaño" name="tamaño" required>
+                        <option value="">Seleccione</option>
+                        <option value="personal">Personal</option>
+                        <option value="mediana">Mediana</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Pizzería Deliciosa</p>
+        </footer>
+    </body>
+    </html>
