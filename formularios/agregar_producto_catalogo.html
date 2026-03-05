@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto a Catologo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Agregar Producto a Catologo</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Detalles del Producto</legend>
+                <label for="prod_nombre">Nombre Comercial:</label>
+                <input type="text" id="prod_nombre" name="prod_nombre" minlength="5" required>
+
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="electronica">Electrónica</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="moda">Moda</option>
+                </select>
+
+                <label for="descripcion">Descripción del Producto:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" placeholder="Describe las características principales..."></textarea>
+
+                <label for="foto">Imagen del Producto:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+                
+                <button type="submit">Publicar en Catálogo</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Tienda Virtual Encargos</p>
+    </footer>
+
+</body>
+
+</html>
