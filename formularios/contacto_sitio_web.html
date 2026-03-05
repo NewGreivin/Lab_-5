@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto para Sitio Web</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contacto para Sitio Web</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Formulario de Contacto</legend>
+                <label for="cliente_nombre">Nombre:</label>
+                <input type="text" id="cliente_nombre" name="cliente_nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="usuario@ejemplo.com" required>
+
+                <label for="asunto">Motivo de contacto:</label>
+                <select id="asunto">
+                    <option value="soporte">Soporte Técnico</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="queja">Reclamación</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" maxlength="500" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contacto para Sitio Web</p>
+    </footer>
+
+</body>
+
+</html>
